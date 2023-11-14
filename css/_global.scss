@@ -1,7 +1,106 @@
 body {
-    font-family: 'Bad Scrip', Arial, Helvetica, sans-serif;
+    font-family: 'Bad Script', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    background: url("../images/squared_paper_sheet.jpg") repeat center center;
-    background-size: cover;
+    color: #003399;
+    background: url("../images/squared_paper_sheet.jpg") repeat;
+    background-size: 60%;
+    padding: 50px 2%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .main {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.5vw;
+        font-weight: 700;
+
+        .main__input,
+        .main__select,
+        .main__btn {
+            text-align: center;
+            background: none;
+            border: none;
+            font-family: 'Bad Script';
+            width: 12%;
+            font-size: 2.5vw;
+            color: #003399;
+            font-weight: 700;
+        }
+
+        .main__select {
+            width: 25%;
+        }
+
+        .main__btn {
+            margin: 20px 0 20px;
+            width: 30%;
+            font-size: 2vw;
+            background-color: #FDF6E6;
+            border: 2px solid #003399;
+            border-radius: 50px;
+            box-shadow: 5px 10px 7px #1F5F5A;
+        }
+
+        .main__btn:hover {
+            cursor: pointer
+        }
+
+        .main__btn:active {
+            background: #003399;
+            color: #FDF6E6;
+            box-shadow: none;
+            transform: scale(0.9);
+        }
+
+        .main__block--mod {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .main__item {
+                padding: 10px 0;
+                border-top: 2px solid #003399;
+
+                .main__input {
+                    width: 50%;
+                    border-bottom: 2px dashed #003399;
+                }
+            }
+        }
+
+        .main__block--add {
+            display: none;
+        }
+
+        .main__block--spec {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .main__item--mod {
+                border-top: 2px solid #003399;
+                padding-top: 25px;
+            }
+
+            .main__input {
+                width: 100%;
+                text-align: center;
+                border: 2px solid #003399;
+                font-size: 2.1vw;
+            }
+        }
+    }
 }
