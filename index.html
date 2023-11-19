@@ -21,7 +21,7 @@
                     <label for="participants">
                         Кількість учасників:
                     </label>
-                    <input type="number" class="main__input" id="participants" step="1" min="1" max="16"
+                    <input type="number" class="main__input" id="participants" step="1" min="2" max="16"
                         placeholder="макс. 16" />
                 </div>
                 <div class="main__item">
@@ -35,17 +35,7 @@
                     <label for="scoringSystem">
                         Система оцінок:
                     </label>
-                    <select class="main__select" id="scoringSystem" />
-                    <option value="5">
-                        5-бальна система
-                    </option>
-                    <option value="10">
-                        10-бальна система
-                    </option>
-                    <option value="100">
-                        100-бальна система
-                    </option>
-                    </select>
+                    <input type="text" class="main__input main__input--mod" id="scoringSystem" placeholder="1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ..." />
                 </div>
                 <div class="main__item">
                     <button class="main__btn" onclick="createParticipantAndJudgesFields()">
@@ -76,11 +66,19 @@
                     Результат голосування
                 </button>
             </div>
+            <div class="main__block">
+                <div class="main__item" id="winnersList">
+                </div>
+            </div>
+            <div class="main__block main__block--spec">
+                <div class="main__item main__item--mod" id="winnersContainer">
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            <!-- <p class="footer__item">
-                2023 by Team #3 (Eugene Yantowsky, Alena Eremina, Artem Zarudniy) - Design for Serg Nikiforov
-            </p> -->
+        <div class="footer" id="byTeam">
+            <p class="footer__item">
+                2023 by Team #3 (Alena Eremina, Artem Zarudniy, Eugene Yantowsky) - Design for Serg Nikiforov
+            </p>
         </div>
 
     </div>
